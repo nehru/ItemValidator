@@ -9,8 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import request.ItemRequest;
-import org.springframework.beans.factory.annotation.Value;
+import com.example.itemvalidator.request.ItemRequest;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

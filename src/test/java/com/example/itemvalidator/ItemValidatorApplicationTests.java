@@ -3,12 +3,11 @@ package com.example.itemvalidator;
 import com.example.itemvalidator.common.ErrorCodes;
 import com.example.itemvalidator.response.Response;
 import com.example.itemvalidator.service.ItemValidationService;
-import com.example.itemvalidator.service.NormalizeSpecifics;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import request.ItemRequest;
+import com.example.itemvalidator.request.ItemRequest;
 
 import java.util.HashMap;
 import java.util.Map;

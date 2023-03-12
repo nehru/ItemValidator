@@ -4,7 +4,7 @@ import com.example.itemvalidator.common.ErrorCodes;
 import com.example.itemvalidator.response.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import request.ItemRequest;
+import com.example.itemvalidator.request.ItemRequest;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package request;
+package com.example.itemvalidator.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
