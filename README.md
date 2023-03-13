@@ -20,7 +20,7 @@ Model with empty string in specifics
 ![Validation pass](images/img-5.png)
 
 Model missing in specifics
-![Validation pass](images/img-5.png)
+![Validation pass](images/img-6.png)
 
 Item validator unit tests
 ![Validation pass](images/img-8.png)
