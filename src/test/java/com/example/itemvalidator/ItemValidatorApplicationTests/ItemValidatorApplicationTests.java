@@ -1,4 +1,4 @@
-package com.example.itemvalidator;
+package com.example.itemvalidator.ItemValidatorApplicationTests;
 
 import com.example.itemvalidator.common.ErrorCodes;
 import com.example.itemvalidator.response.Response;
@@ -138,8 +138,8 @@ class ItemValidatorApplicationTests {
         itemRequest.setItemSpecifics(map);
         Response response = itemValidationService.ValidateModelInSpecifics(itemRequest);
         Assertions.assertNotNull(response);
-         Assertions.assertEquals(ErrorCodes.ResponseCode.MODEL_MISSING, response.getErrorId());
-         Assertions.assertEquals(ErrorCodes.ResponseMessage.MODEL_MISSING.text, response.getErrorMessage());
+         Assertions.assertEquals(ErrorCodes.ResponseCode.MODEL_WITH_EMPTY_STRING, response.getErrorId());
+         Assertions.assertEquals(ErrorCodes.ResponseMessage.MODEL_WITH_EMPTY_STRING.text, response.getErrorMessage());
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.example.itemvalidator.E2E;
+package com.example.itemvalidator.E2ETests;
 
 import com.example.itemvalidator.common.ErrorCodes;
 import com.example.itemvalidator.response.Response;
@@ -51,7 +51,7 @@ public class EndToEndTesting {
     public void testValidateItemWithIncorrectSiteId(){
         ItemRequest itemRequest = new ItemRequest();
 
-        itemRequest.setSiteId(-1);
+        itemRequest.setSiteId(-43);
         itemRequest.setCategoryId(874);
         itemRequest.setTitle("New car with blue color");
         itemRequest.setCondition("used");

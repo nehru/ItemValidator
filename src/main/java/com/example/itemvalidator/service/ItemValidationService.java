@@ -88,10 +88,12 @@ public class ItemValidationService {
     public Response ValidateModelInSpecifics(ItemRequest itemRequest) {
         Response response = null;
 
-        if (itemRequest.getItemSpecifics() != null && (itemRequest.getItemSpecifics().containsKey("model") && itemRequest.getItemSpecifics().get("model").length() == 0) ||(!itemRequest.getItemSpecifics().containsKey("model"))) {
+        if (itemRequest.getItemSpecifics() != null && (itemRequest.getItemSpecifics().containsKey("model") && itemRequest.getItemSpecifics().get("model").length() == 0)) {
+            response = new Response(ErrorCodes.ResponseCode.MODEL_WITH_EMPTY_STRING, ErrorCodes.ResponseMessage.MODEL_WITH_EMPTY_STRING.text);
+        }else if(!itemRequest.getItemSpecifics().containsKey("model")){
             response = new Response(ErrorCodes.ResponseCode.MODEL_MISSING, ErrorCodes.ResponseMessage.MODEL_MISSING.text);
-
         }
+
         return response;
     }
 }

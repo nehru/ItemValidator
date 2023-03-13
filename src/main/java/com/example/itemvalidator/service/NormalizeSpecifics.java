@@ -1,5 +1,8 @@
 package com.example.itemvalidator.service;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Locale;
@@ -7,11 +10,14 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class NormalizeSpecifics {
     private Map<String, String> cache = new ConcurrentHashMap<>();
 
     public String nomalize(String itemSpecific) {
-        if (cache.containsKey(itemSpecific)) {
+        if (itemSpecific != null && cache.containsKey(itemSpecific)) {
             return cache.get(itemSpecific);
         }
 
