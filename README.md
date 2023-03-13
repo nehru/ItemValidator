@@ -1,6 +1,7 @@
 # ItemValidator Application
 
-Run the application in IDE or in command line
+Launching the application can be achieved through the IDE or the command line
+
 mvn spring-boot:run
 
 Validation pass
