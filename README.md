@@ -1,4 +1,4 @@
-# ItemValidator
+# ItemValidator Application
 
 Run the application in IDE or in command line
 mvn spring-boot:run
